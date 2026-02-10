@@ -135,8 +135,8 @@ with tab_dados:
     st.markdown("""
     **Sobre os Dados:**
     Este gráfico ilustra a correlação direta entre o aumento das denúncias e a resposta imediata do Poder Judiciário. 
-    A proximidade entre as barras de 'Denúncias' e 'Medidas' demonstra que o Estado está atento: **mulheres que denunciam 
-    recebem amparo legal**. Os números crescentes em 2026 refletem maior confiança nas instituições e a eficácia das campanhas 
+    A proximidade entre as barras de 'Denúncias' e 'Medidas' demonstra que o Estado está atento: mulheres que denunciam 
+    recebem amparo legal. Os números crescentes em 2026 refletem maior confiança nas instituições e a eficácia das campanhas 
     de conscientização como o Sinal Vermelho.
     """)
 
