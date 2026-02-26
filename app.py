@@ -19,7 +19,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # --- 2. SAÍDA DE EMERGÊNCIA ---
-if st.button("❌ SAIR RÁPIDO (BOTÃO DE PÂNICO)"):
+if st.button("❌ SAIR RÁPIDO DO SITE"):
     st.markdown('<meta http-equiv="refresh" content="0;URL=\'https://www.google.com\'" />', unsafe_allow_html=True)
 
 # --- 3. MENU LATERAL (SIDEBAR) ---
@@ -33,10 +33,10 @@ with st.sidebar:
     st.subheader("Sinal Vermelho ✋")
     # Imagem do X na mão corrigida para Wikimedia (mais estável)
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Red_cross_hand.svg/200px-Red_cross_hand.svg.png", width=120)
-    st.caption("Faça um 'X' na palma da mão se você estiver precisando de ajuda, e amostre pra alguma altoridade e ele vai lhe ajudar")
+    st.caption("Faça um 'X' na palma da mão se você estiver precisando de ajuda, e amostre pra alguma altoridade e ele irá lhe ajudar")
 
 # --- 4. TÍTULO E DEFINIÇÃO DO FEMINICÍDIO ---
-st.title("🛡️ Portal Integrado Mulher Segura")
+st.title("🛡️ Mulher Segura a Todo Tempo")
 
 col_intro, col_img_intro = st.columns([2, 1])
 with col_intro:
@@ -65,7 +65,7 @@ st.markdown("""
 tab_leis, tab_ciclo, tab_teste, tab_dados = st.tabs(["⚖️ Leis & Direitos", "🔄 O Ciclo", "🔍 Avaliação de Risco", "📊 Dados de Impacto"])
 
 with tab_leis:
-    st.header("Biblioteca Jurídica de Proteção")
+    st.header("Biblioteca Jurídica de Proteção à Mulher")
     
     st.markdown('<div class="law-card">', unsafe_allow_html=True)
     st.subheader("Lei Maria da Penha (11.340/06)")
@@ -86,7 +86,7 @@ with tab_leis:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with tab_ciclo:
-    st.header("Entenda as Fases do Ciclo")
+    st.header("Entenda Por Onde Tudo Começa e o Que as Mulheres Passam")
     st.image("https://www.cnj.jus.br/wp-content/uploads/2021/08/ciclo-violencia.png", caption="Fonte: CNJ", use_container_width=True)
     st.write("""
     1.  **Tensão**: A situação começa a esquentar, com agressões verbais, ameaças e um clima de medo. A vítima pode sentir-se ansiosa, tentando evitar o pior. O agressor pode ficar irritado, crítico e controlador.
@@ -98,8 +98,8 @@ with tab_ciclo:
     """)
 
 with tab_teste:
-    st.header("Análise de Risco Completa")
-    st.write("Responda com sinceridade (Totalmente Anônimo):")
+    st.header("Análise de Risco Que Voçe Ja Passou ou Está Passando")
+    st.write("Responda com sinceridade essa pesquisa é Totalmente Anônimo")
     r1 = st.checkbox("Ele já ameaçou tirar seus filhos ou sua vida?")
     r2 = st.checkbox("Ele controla suas senhas ou redes sociais?")
     r3 = st.checkbox("Ele te impede de ver amigos ou familiares?")
@@ -116,7 +116,7 @@ with tab_teste:
             st.success("✅ Continue se informando sobre seus direitos.")
 
 with tab_dados:
-    st.header("📊 Impacto da Rede de Proteção")
+    st.header("📊 Pequisa de Denúcias Feitas e Medidas Tomadas")
     
     meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun']
     denuncias = [120, 155, 190, 240, 280, 350]
